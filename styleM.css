@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#checkoutMenu{
+  width:400px;
+  height:500px; 
+  border-color:black;
+}
+
+.panels button{
+  height:70px;
+  width:350px;
+}
+
+.item{
+  width:400px; 
+  height:210px; 
+  padding-left: 50px;
+}
+
+.line{
+  width:400px; 
+  border-width: 1px;
+  border-color: black;
+
+}
+
+.panels img{
+  max-width:400px;
+  max-height:400px; 
+}
+
+.addBtn{
+  background-color: #E7942D;
+}
+li{
+  margin:auto;
+}
+
+#bars img{
+  width:50px;
+  height:50px;
+}

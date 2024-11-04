@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#checkoutMenu{
+  width:400px;
+  height:500px; 
+  border-color:black;
+}
+
+.line{
+  width:400px; 
+  border-width: 1px;
+  border-color: black;
+
+}

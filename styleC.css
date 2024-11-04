@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+#headPanel{
+  min-height: 300px; 
+ 
+}
+
+#headPanel img{
+  max-height:300px;
+  margin:auto; 
+}
+
+#head{
+  padding-top: 50px; 
+}
+
+.circle{
+  width:250px; 
+  height:250px;
+}
+
+.rectangle{
+  border:2px solid; 
+  height: 250px; 
+  left:10px; 
+  position: abosolute; 
+  top: 75px;  
+  width:900px;
+  align-self: center;
+}
+
+.circle img{
+  width:250px; 
+  height:250px; 
+}
+.station {
+  max-width: 600px; 
+  height:200px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+li{
+  margin:auto;
+}
+
+#bars img{
+  width:50px;
+  height:50px;
+}

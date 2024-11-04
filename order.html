@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="styleO.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Game Day Grill | Order</title>
+</head>
+  <body>
+    <!--heading-->
+    <header>
+      <nav class="top-0 text-white" style="background-color:#4b200d;"> 
+        <div  class="items-center lg:!flex lg:basis-auto grid grid-cols-2 grid-rows-1" id="navbarSupportedContent3"data-te-collapse-item> 
+          <ul class=" opacity-100 list-style-none mr-auto flex flex-col lg:flex-row align-right" id="navbar" data-te-navbar-nav-ref>
+              <li id="bars" class="px-5 pt-6 pb-6" data-te-nav-item-ref><img src="logo.png"></li>
+              <li id="homeNav" class="px-5 pt-6 pb-6 hover:font-bold" data-te-nav-item-ref><a href="index.html">HOME</a></li>
+              <li id="menuNav"class="px-5 pt-6 pb-6 hover:font-bold " data-te-nav-item-ref><a href="menu.html">MENU</a></li>
+              <li id="orderNav"class="px-5 pt-6 pb-6 font-bold " data-te-nav-item-ref><a href="order.html">ORDER</a></li>
+              <li id="caterNav"class="pr-10 pl-5 pt-6 pb-6 hover:font-bold" data-te-nav-item-ref><a href="cater.html">CATER</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- end of heading --> 
+    <!-- order ahead --> 
+    <div class="orderPanel flex justify-content-center pb-10 pl-10">
+      <div class="grid grid-cols-3 grid-rows-1 gap-40">
+        <div>
+          <p class="uppercase text-2xl font-bold text-center pb-10 pl-10">order ahead!</p>
+
+          <div class=" rectangle selectBtn">
+            <p class="pl-5 pt-5 dropdown uppercase">type</p>
+          </div>
+          <div class="optionsType hidden options">
+            <p id="deliver" class="uppercase font-light py-2 px-5 hover:bg-zinc-200">delivery</p>
+            <p class="uppercase font-light py-2 px-5 hover:bg-zinc-200">pick up</p>
+          </div> 
+
+          <br>
+          <div class="selectBtnWhen rectangle">
+            <p class="pl-5 pt-5 uppercase">tim</p>
+          </div> 
+          <div class="optionsWhen hidden options">
+            <p id="now" class="uppercase font-light py-2 px-5 hover:bg-zinc-200">Now</p>
+            <p class="uppercase font-light py-2 px-5 hover:bg-zinc-200"><input class="uppercase font-light hover:bg-zinc-200" placeholder="Preferred Time"></p>
+          </div>
+          <br>
+          <div class="rectangle selectBtnWhere">
+            <p class="pl-5 pt-5 uppercase">location</p>
+          </div>
+          <div class="optionsWhere hidden options">
+            <p id="deliver" class="uppercase font-light py-2 px-5 hover:bg-zinc-200">1243 Manor Rd. Austin TX 78769</p>
+            <p class="uppercase font-light py-2 px-5 hover:bg-zinc-200">435 Suite Jenk Blvd Houston TX 34583</p>
+          </div>
+          <div class="pt-10"> <button id="order"class="text-white font-bold rounded-full  py-2 px-4  uppercase" style="background-color:#e7942d;"><a href="menu.html">Start Order</a></button> </div>
+        </div>
+        <div class="cols-span-2">
+          <img src="https://images.unsplash.com/photo-1489528792647-46ec39027556?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFrZSUyMGF3YXklMjBzaWdufGVufDB8fDB8fHww">
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- footer --> 
+    <footer class="text-white static bottom-0 left-0 w-full" style="background-color:#4b200d;">
+      <div class="grid grid-cols-3 grid-rows-1 pl-20">
+       <div class="pt-10 pl-5">
+            <h3 class="uppercase font-semibold">Contact Us</h3>
+            <p class="font-light text-sm">321-465-7890</p>
+           <p class="font-light text-sm">Instagram: @GameDayGrill</p>
+         <p class="font-light text-sm">Twitter: @GameDayGrill</p>
+        </div>
+        <div class="pt-10  col-span-2">
+            <h3 class="uppercase font-semibold">Hours</h3>
+            <p class="font-light text-sm">M-T 12:00 - 9:00 PM</p>
+           <p class="font-light text-sm">F-S 11:00 - 11:00 PM</p>
+        </div>
+
+      </div>
+      <p class="text-center text-xs pt-10">Designed by Melissa Ortiz, Asha Rountree & Developed by Imaan Dadabhoy 2023.</p>
+      <p class="text-center text-xs pt-2">Theme: Game Day Grill, Chapter  02-0905 James Bowie High School Austin TX 2023.</p>
+    </footer>
+
+    <script>
+      // code for opening option menu 
+
+      $(".selectBtn").on("click", open);
+      function open(){
+          $(".optionsType").slideToggle("slow");
+      }
+      $(".selectBtnWhen").on("click", openWhen);
+      function openWhen(){
+          $(".optionsWhen").slideToggle("slow");
+      }
+      $(".selectBtnWhere").on("click", openWhere);
+      function openWhere(){
+          $(".optionsWhere").slideToggle("slow");
+      }
+
+    </script>
+  </body>
+
+</html>
