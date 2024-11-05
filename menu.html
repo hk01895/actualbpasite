@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styleM.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <title>Stage Fright | Tour Dates</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="bg-black text-white p-4 fixed top-0 w-full z-50 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <a href="index.html" class="text-xl font-bold hover:text-gray-300">Home</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="Stage Fright Logo" class="h-10 w-10 rounded-full" />
+    </div>
+  </nav>
+  </nav>
+
+
+  <!-- New video banner for Tour Page -->
+  <div class="tourVideo relative">
+    <video autoplay loop muted class="w-full h-full object-cover">
+      <source src="your-video-1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Title overlay for tour page positioned higher -->
+    <div class="absolute top-1/6 w-full flex items-center justify-center">
+      <p style="font-family: 'Playfair Display', serif; font-size: 4rem; color: white; text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); letter-spacing: 2px; font-style: italic;">
+        Stage Fright Tour 2024
+      </p>
+    </div>
+  </div>
+
+  <!-- Old video with tour dates below -->
+  <div class="tourDates relative">
+    <video autoplay loop muted class="w-full h-full object-cover">
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Tour dates overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white">
+      <p class="text-2xl font-bold uppercase mb-6">Tour Dates</p>
+
+      <!-- Tour Dates Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-8">
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Los Angeles, CA</p>
+          <p class="font-light">February 5, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Chicago, IL</p>
+          <p class="font-light">March 10, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">New York, NY</p>
+          <p class="font-light">April 22, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Austin, TX</p>
+          <p class="font-light">May 15, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Nashville, TN</p>
+          <p class="font-light">June 18, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Denver, CO</p>
+          <p class="font-light">July 21, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Seattle, WA</p>
+          <p class="font-light">August 15, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Phoenix, AZ</p>
+          <p class="font-light">September 9, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+        <div class="tour-item text-center">
+          <p class="text-lg font-semibold">Miami, FL</p>
+          <p class="font-light">October 3, 2024</p>
+          <button class="buy-btn text-white font-bold py-2 px-4 mt-4 rounded-full uppercase">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white" style="background-color:#4b200d;">
+    <div class="flex justify-center py-4">
+      <p>&copy; Stage Fright Tour 2024. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <style>
+    /* Extra spacing to ensure nav bar doesn't overlap content */
+    body {
+      margin-top: 70px;
+    }
+
+    .tour-item {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    .buy-btn {
+      background-color: #E7942D;
+    }
+  </style>
+
+</body>
+</html>
